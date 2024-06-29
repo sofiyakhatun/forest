@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.first {
+    background-color: black;
+    line-height: 10vh;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 100;
+    width: 100%;
+}
+.first h1{
+    color: red;
+}
+.first p{
+    color: #fff;
+}
+.first button:hover{
+    background-color: black;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.btn1{
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+.sec{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 50px 0;
+}
+.sec h2{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: 300;
+}
+.four {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+}
+.four div{
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 0 rgb(227, 222, 222);
+}
+.four div:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+    /* transform: scale(.5,.5); */
+}
+.four div p{
+    padding: 20px 0px;
+    font-weight: 900;
+    font-size: 22px;
+}
+.end button:hover{
+    background-color: rgb(231, 87, 46);
+    border: 2px solid #fff;
+    color: #fff;
+}
+.end h1, .first p{
+    color: transparent;
+    background-image: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    animation: sofiya 3s linear forwards infinite alternate;
+    background-position: -750px 0;
+    transition: 1s;
+}
+@keyframes sofiya{
+    100%{
+        background-position: 0 0;
+    }
+}
+.end{
+    background-color: rgb(231, 87, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 10vh;
+    font-weight: 100;
+    color: #fff;
+    height: 25rem;
+    width: 100%;
+}
+@media(max-width:1276px ) {
+    .four img{
+        width: 30rem;
+    }
+}
+@media(max-width: 1053px ) {
+    .four img{
+        width: 25rem;
+    }
+}
+@media(max-width:875px ) {
+    .four img{
+        width: 35rem;
+    }
+    .four{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 715px ) {
+    .four img{
+        width: 25rem;
+    }
+    .first p{
+        font-size: 16px;
+        padding: 0 11px;
+    }
+}
+@media(max-width: 495px ) {
+    .four img{
+        width: 17rem;
+    }
+    .end h1{
+        font-size: 22px;
+    }
+}
